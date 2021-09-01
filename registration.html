@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='registration.css'>
+    
+    <title>Registration</title>
+
+</head>
+<body>
+
+<h2>Fill details</h2>
+
+<div class="container">
+  <form id ="contactForm">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fname" placeholder="Your name.." pattern="[A-Za-z ]{3,30}" title="No numbers and special characters">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lname" placeholder="Your last name.." pattern="[A-Za-z ]{1,30}" title="One or more letters.No numbers and special characters">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">State</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="state" name="state" placeholder="Your state" pattern="[A-Za-z ]{3,30}" title="3 or more letters.No numbers and special characters"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input  type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<script>
+  function myFunction() {
+    alert("Registered successfully!");
+  }
+  </script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
